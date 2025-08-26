@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: #4caf50;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+.hero p {
+  font-size: 16px;
+}
+
+.topnav {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.topnav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+.topnav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+#content {
+  flex: 3;
+}
+
+aside.sidebar {
+  flex: 1;
+}
+
+.card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+h2,
+h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.card img {
+  display: block;
+  border-radius: 6px;
+  margin: 10px auto;
+}
+
+#sejarah img,
+#geografis img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#wisata img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.emblem {
+  width: 120px;
+  margin: 0 auto 12px;
+  display: block;
+}
+
+.info {
+  list-style: none;
+}
+
+.info li {
+  margin-bottom: 6px;
+}
+
+.info span {
+  font-weight: bold;
+  color: #555;
+}
+
+.footer {
+  background: #4caf50;
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+  aside.sidebar {
+    order: -1;
+  }
+}
